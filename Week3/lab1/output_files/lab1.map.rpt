@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab1
-Thu Sep 17 15:00:25 2020
+Thu Sep 17 15:36:12 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 17 15:00:25 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 17 15:36:11 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab1                                        ;
 ; Top-level Entity Name              ; lab1                                        ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; 10M08DAF484I7G     ;                    ;
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
 ; Top-level entity name                                            ; lab1               ; lab1               ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -163,13 +163,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------+---------+
-; lab1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ipipos/Desktop/CAHomework/Week3/lab1.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
+; lab1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/ipipos/Desktop/CAHomework/Week3/lab1/lab1.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -249,7 +249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -259,11 +259,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Sep 17 14:59:07 2020
+    Info: Processing started: Thu Sep 17 15:35:21 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 0 design units, including 0 entities, in source file lab1.v
 Info (12021): Found 1 design units, including 1 entities, in source file lab1.bdf
     Info (12023): Found entity 1: lab1
 Info (12127): Elaborating entity "lab1" for the top level hierarchy
@@ -275,9 +274,9 @@ Info (21057): Implemented 4 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4746 megabytes
-    Info: Processing ended: Thu Sep 17 15:00:26 2020
-    Info: Elapsed time: 00:01:19
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Peak virtual memory: 4749 megabytes
+    Info: Processing ended: Thu Sep 17 15:36:12 2020
+    Info: Elapsed time: 00:00:51
+    Info: Total CPU time (on all processors): 00:00:54
 
 
