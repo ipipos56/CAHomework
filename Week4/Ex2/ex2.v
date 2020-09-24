@@ -1,38 +1,23 @@
 module ex2
 (
-	input [1:0] KEY,
-	output [9:0] LED,
-	output [47:0] HEX
+	output [7:0] HEX0,
+	output [7:0] HEX1,
+	output [7:0] HEX2,
+	output [7:0] HEX3,
+	output [7:0] HEX4,
+	output [7:0] HEX5,
+	
+	input [1:0] KEY
 );
 
-genvar i;
+//30.07.02
 
-generate
-	for (i=0; i<9; i=i+2)
-	begin: gen
-		assign LED[i]=~KEY[1];
-	end
-endgenerate
 
-genvar j;
-generate
-	for (j=0; j<6; j=j+1)
-	begin: gen2
-		case(j)
-		0: assign HEX[4]=~KEY[0],
-			HEX[5]=~KEY[0],
-				HEX[7]=~KEY[0];
-		1: assign HEX[4+j*8]=~KEY[0],
-			HEX[7+j*8]=~KEY[0];
-		2: assign HEX[4+j*8]=~KEY[0],
-			HEX[5+j*8]=~KEY[0];
-		3: assign HEX[6+j*8]=~KEY[0],
-			HEX[7+j*8]=~KEY[0];
-		4: assign HEX[6+j*8]=~KEY[0];
-		5: assign HEX[2+j*8]=~KEY[0],
-			HEX[5+j*8]=~KEY[0],
-				HEX[7+j*8]=~KEY[0];
-	endcase
-	end
-endgenerate
+assign HEX0 = 8'b11110010;
+assign HEX1 = 8'b11111101;
+assign HEX2 = 8'b11111100;
+assign HEX3 = 8'b11100001;
+assign HEX4 = 8'b11111100;
+assign HEX5 = 8'b11011010;
+
 endmodule
